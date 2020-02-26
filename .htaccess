@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+AddDefaultCharset utf-8
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteCond %{REQUEST_URI} !-L
+# we exclude some folders
+RewriteRule ^(example|test|css|vendors|vendor|js|img|upload)($|/) - [L]
+
+RewriteRule ^(.*)$ index.php
+
+</IfModule>

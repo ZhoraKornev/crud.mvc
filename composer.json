@@ -1,0 +1,23 @@
+{
+    "name": "zhora/crud-mvc",
+    "description": "Tickets application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zhora Kornev",
+            "email": "jora_kornev@i.ua"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "eftec\\exampleticket\\": ""
+        }
+    },    
+    "require": {
+        "eftec/bladeone": "^3.30",
+        "eftec/pdoone": "^1.7",
+        "eftec/routeone": "^1.2",
+        "eftec/validationone": "^1.14"
+    }
+}
